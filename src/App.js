@@ -1,8 +1,8 @@
 
 import Navbar from "./Components/Navbar/navbar"
 import HeroSection from './Components/HeroSection/heroSection'
-// import AboutSection from './components/AboutSection/AboutSection'
-// import LawSection from './components/LawSection/LawSection'
+import AboutSection from './Components/AboutSection/aboutSection'
+import LawSection from './Components/LawSection/lawSection'
 // import TestimonialSection from './components/TestimonialSection/TestimonialSection'
 // import OurTeamSection from './components/OurTeamSection/OurTeamSection'
 // import FaqSection from './components/FaqSection/FaqSection'
@@ -14,9 +14,9 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
-      {/* <AboutSection /> */}
-      {/* <LawSection />
-      <TestimonialSection />
+      <AboutSection />
+      <LawSection />
+      {/* <TestimonialSection />
       <OurTeamSection />
       <FaqSection />
       <Newsletter />

@@ -9,14 +9,14 @@
 
 .heroImageSection{
     position: relative;
-    /* background-image: url('../../assets/heroBackground.svg'); */
+    /* background-image: url('../../assets/backgroundStyle.png'); */
     border-radius: 43px ;
     background-repeat: no-repeat;
 }
 
 .heroImage1{
     width: 443px;
-    height: 467;
+    /* height: 467px; */
 }
 
 .heroImage{

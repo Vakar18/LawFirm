@@ -6,9 +6,11 @@ import {
   Typography,
 } from "@mui/material";
 import heroImage from "../../assets/heroImage.png";
-import heroImage1 from "../../assets/heroImage1.png";
+import heroImage1 from "../../assets/backgroundStyle.png";
 import styles from "./herosection.module.css";
 import MailIcon from "@mui/icons-material/Mail";
+import theme from "../../Theme/theme";
+
 const HeroSection = () => {
   return (
     <div className={styles.heroSectionWrapper}>
@@ -39,7 +41,7 @@ const HeroSection = () => {
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ color: "text.subtitle", my: "36px" }}
+              sx={{ color: theme.palette.text.subtitle, my: "36px" }}
             >
               Lorem ipsum dolor sit amet consectetur adipiscing elit blandit,
               curabitur sodales conubia ut inceptos faucibus himenaeos tortor
@@ -54,16 +56,16 @@ const HeroSection = () => {
                 startAdornment: (
                   <InputAdornment position="start">
                     <MailIcon
-                      sx={{ color: "text.subtitle", marginLeft: "28px" }}
+                      sx={{ color: theme.palette.text.subtitle, marginLeft: "8px" }}
                     />
                   </InputAdornment>
                 ),
                 endAdornment: (
                   <InputAdornment position="end">
                     <Box
-                      color="text.black"
+                      color={theme.palette.text.black}
                       sx={{
-                        bgcolor: "text.primary",
+                        bgcolor: theme.palette.text.primary,
                         width: "137px",
                         height: "62px",
                         display: "flex",
@@ -72,6 +74,7 @@ const HeroSection = () => {
                         borderRadius: "43px",
                         marginRight: "7px",
                         cursor: "pointer",
+                        ":hover": { bgcolor: theme.palette.text.subtitle, color: theme.palette.text.white },
                       }}
                     >
                       {"Let's Talk"}
@@ -79,13 +82,13 @@ const HeroSection = () => {
                   </InputAdornment>
                 ),
               }}
-              sx={{ bgcolor: "#292929", borderRadius: "43px", width: "438px" }}
+              sx={{ bgcolor: "#292929", borderRadius: "43px", width: "438px" ,}}
               placeholder="Enter Your Email Address"
             />
           </Box>
           <Box className={styles.heroImageSection}>
-            <img className={styles.heroImage} src={heroImage} />
-            <img className={styles.heroImage1} src={heroImage1} />
+            <img className={styles.heroImage} src={heroImage} alt="HeroImage"/>
+            <img className={styles.heroImage1} src={heroImage1} alt="HeroImageBackground" />
           </Box>
         </Box>
       </Container>

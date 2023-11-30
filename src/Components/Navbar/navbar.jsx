@@ -8,15 +8,17 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import theme from "../../Theme/theme";
 
 import styles from "./navbar.module.css";
 import logo from "../../assets/Logo1.svg";
+import logo1 from "../../assets/Igstudio.svg";
 
 const pages = ["Home", "Attorneys", "Practice Areas", "About Us"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -37,6 +39,7 @@ function Navbar() {
           <Box
             sx={{
               mr: 2,
+              ml:2,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
@@ -46,7 +49,7 @@ function Navbar() {
             }}
           >
             <img src={logo} alt="" />
-            <h1>LawFirm</h1>
+            <img src={logo1} alt="" />
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -111,7 +114,7 @@ function Navbar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "text.white", display: "block" }}
+                sx={{ my: 2, color: theme.palette.text.white, display: "block" }}
               >
                 {page}
               </Button>
@@ -121,7 +124,7 @@ function Navbar() {
           {/* 3 Element */}
           <Box sx={{ flexGrow: 0 }}>
             <Button
-              sx={{ color: "text.white", borderColor: "text.white" }}
+              sx={{ color: theme.palette.text.white, borderColor: theme.palette.text.white }}
               variant="outlined"
             >
               Contact Now
