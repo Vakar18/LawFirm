@@ -1,9 +1,8 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Avatar, Box, Button, CardActionArea } from "@mui/material";
+import {  Box, Button, } from "@mui/material";
 import gift from "../../../assets/gift.svg";
 import styles from "./aboutCard.module.css";
 import theme from "../../../Theme/theme";
