@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar/navbar"
 import HeroSection from './Components/HeroSection/heroSection'
 import AboutSection from './Components/AboutSection/aboutSection'
 import LawSection from './Components/LawSection/lawSection'
-// import TestimonialSection from './components/TestimonialSection/TestimonialSection'
+import TestimonialSection from './Components/TestimonialSection/testimonialSection'
 // import OurTeamSection from './components/OurTeamSection/OurTeamSection'
 // import FaqSection from './components/FaqSection/FaqSection'
 // import Newsletter from './components/Newsletter/Newsletter'
@@ -16,8 +16,8 @@ function App() {
       <HeroSection />
       <AboutSection />
       <LawSection />
-      {/* <TestimonialSection />
-      <OurTeamSection />
+      <TestimonialSection />
+      {/* <OurTeamSection />
       <FaqSection />
       <Newsletter />
       <Footer /> */}
